@@ -75,9 +75,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
-    <Reference Include="Cp.Barcode.Pcl">
-      <HintPath>..\..\Cp.Barcode.Pcl\bin\Debug\Cp.Barcode.Pcl.dll</HintPath>
-    </Reference>
     <Reference Include="Plugin.Permissions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.Permissions.3.0.0.12\lib\netstandard1.0\Plugin.Permissions.dll</HintPath>
     </Reference>
@@ -99,6 +96,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cp.Barcode.Pcl\Cp.Barcode.Pcl.csproj">
+      <Project>{677C433A-8C1F-466F-91CA-1181FDF29795}</Project>
+      <Name>Cp.Barcode.Pcl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

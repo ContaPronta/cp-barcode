@@ -111,6 +111,14 @@
       <Project>{E42FC234-D813-44BE-873F-E5DD3C77B45D}</Project>
       <Name>Sample.Pcl</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Cp.Barcode.iOS\Cp.Barcode.iOS.csproj">
+      <Project>{B9877E36-1064-494B-956C-B66049778CD8}</Project>
+      <Name>Cp.Barcode.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cp.Barcode.Pcl\Cp.Barcode.Pcl.csproj">
+      <Project>{677C433A-8C1F-466F-91CA-1181FDF29795}</Project>
+      <Name>Cp.Barcode.Pcl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
