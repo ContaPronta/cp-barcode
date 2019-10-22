@@ -14,7 +14,7 @@ namespace Sample.Pcl
 
         public App()
         {
-            MainPage = new MainPage();
+            MainPage = new Page1();
         }
 
         protected override void OnStart()

@@ -1,0 +1,9 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Plugin.Permissions": "3.0.0.12"
+  },
+  "frameworks": {
+    ".NETPortable,Version=v4.5,Profile=Profile49": {}
+  }
+}

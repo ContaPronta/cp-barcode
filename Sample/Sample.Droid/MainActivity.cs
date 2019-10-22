@@ -4,7 +4,7 @@ using Android.App;
 using Android.OS;
 using Sample.Pcl;
 using Xamarin.Forms.Platform.Android;
-using Rb.Forms.Barcode.Droid;
+using Cp.Barcode.Droid;
 using Android.Content.PM;
 using Xamarin.Forms;
 using AndroidCamera = Android.Hardware.Camera;

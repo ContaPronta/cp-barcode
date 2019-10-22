@@ -10,7 +10,7 @@ namespace Sample.Pcl.Pages
 
         public MainPage()
         {
-            InitializeComponent();
+           // InitializeComponent();
         }
 
         private void gotoScannerPage(Object sender, EventArgs e)

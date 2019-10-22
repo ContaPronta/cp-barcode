@@ -5,7 +5,7 @@
     x:Class="Sample.Pcl.Pages.ScannerPage"
     xmlns:viewModels="clr-namespace:Sample.Pcl.Model;assembly=Sample.Pcl"
     xmlns:viewConverter="clr-namespace:Sample.Pcl.ViewConverter;assembly=Sample.Pcl"
-    xmlns:rbBarcode="clr-namespace:Rb.Forms.Barcode.Pcl;assembly=Rb.Forms.Barcode.Pcl">
+    xmlns:rbBarcode="clr-namespace:Cp.Barcode.Pcl;assembly=Cp.Barcode.Pcl">
 
     <ContentPage.BindingContext>
         <viewModels:ScannerViewModel />
@@ -33,10 +33,10 @@
             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"
         />
 
-        <ActivityIndicator IsRunning="{Binding Initialized, Converter={viewConverter:InverseBoolConverter}}"
+        <!--ActivityIndicator IsRunning="{Binding Initialized, Converter={viewConverter:InverseBoolConverter}}"
             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-25}"
             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
-        />
+        /-->
 
         <BoxView Color="Red" HeightRequest="1" IsVisible="{Binding Initialized}"
             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.1}"
@@ -75,9 +75,6 @@
                 Command="{Binding ToggleTorchCommand}"
             />
 
-            <Button FontSize="8" Text="Goto third page"
-                Clicked="gotoThirdPage"
-            />
         </StackLayout>
     </RelativeLayout>
 </ContentPage>

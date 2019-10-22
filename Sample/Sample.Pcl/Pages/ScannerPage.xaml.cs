@@ -1,5 +1,5 @@
 ﻿using Xamarin.Forms;
-using Rb.Forms.Barcode.Pcl;
+using Cp.Barcode.Pcl;
 using System;
 
 namespace Sample.Pcl.Pages
@@ -38,10 +38,10 @@ namespace Sample.Pcl.Pages
             disableScanner(null);
         }
 
-        private void gotoThirdPage(Object sender, EventArgs e)
+      /*  private void gotoThirdPage(Object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ThirdPage());
-        }
+            Navigation.PushAsync(new Page1());
+        }*/
 
 
         /**

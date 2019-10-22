@@ -4,7 +4,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using Rb.Forms.Barcode.Pcl;
+using Cp.Barcode.Pcl;
 
 namespace Sample.Pcl.Model
 {
@@ -24,6 +24,7 @@ namespace Sample.Pcl.Model
         public ICommand TogglePreviewCommand { get; private set; }
         public ICommand ToggleTorchCommand { get; private set; }
         public ICommand ToggleDecoderCommand { get; private set; }
+        public ICommand ToggleGoToThirdPageCommand { get; private set; }
 
         public String Barcode {
             get { return barcode; }

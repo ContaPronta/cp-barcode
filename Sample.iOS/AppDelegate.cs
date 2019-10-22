@@ -3,9 +3,9 @@ using UIKit;
 using Xamarin.Forms.Platform.iOS;
 using Xamarin.Forms;
 using Sample.Pcl;
-using Rb.Forms.Barcode.iOS;
+using Cp.Barcode.iOS;
 using System.Collections.Generic;
-using Rb.Forms.Barcode.Pcl;
+using Cp.Barcode.Pcl;
 
 namespace Sample.iOS
 {
@@ -19,7 +19,8 @@ namespace Sample.iOS
                 new Configuration { 
                     Barcodes = new List<Barcode.BarcodeFormat> { 
                         Barcode.BarcodeFormat.Ean13,
-                        Barcode.BarcodeFormat.Ean8
+                        Barcode.BarcodeFormat.Ean8,
+                        Barcode.BarcodeFormat.Intervealed2of5
                     }
                 }
             );
